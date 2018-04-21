@@ -1,0 +1,30 @@
+@import '_var';
+@import '_reset';
+body{
+    header{
+        height: 20vh;
+        background: rgb(150, 18, 200);
+    }
+}
+.block{
+    width: calc(100vw - 500px);
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto auto;
+    div{
+        max-width: 33%;
+        width: 28%;
+        margin-top: 10px;
+        border: 1px solid rgba(24, 41, 75, 0.8);
+        box-sizing: border-box;
+        @include padding(10px, 10px);
+        text-align: center;
+        overflow: hidden;
+        p{
+            text-align: left;
+        }
+    }
+}
+
+@import '_adaptive';
