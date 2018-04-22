@@ -11,7 +11,8 @@ body{
     display: flex; 
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: auto auto;
+    margin: auto;
+    transition: all 300ms linear;
     div{
         max-width: 33%;
         width: 28%;
