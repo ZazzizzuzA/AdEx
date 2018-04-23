@@ -7,11 +7,11 @@ let allCommer = Array.from(document.getElementsByClassName('ad')),
     body = document.getElementsByTagName('body')[0],
     position,
     existCommers = true,
-    content = document.getElementsByClassName("block")[0],
-    slot1 = googletag.defineSlot('/112081842/Front-End-TA_240x400', [240, 400], "ad1"),
-    slot2 = googletag.defineSlot('/112081842/Front-End-TA2_240x400', [240, 400], 'ad2');
-    console.log(slot1);
-    console.log(slot2);
+    content = document.getElementsByClassName("block")[0];
+    // slot1 = googletag.defineSlot('/112081842/Front-End-TA_240x400', [240, 400], "ad1"),
+    // slot2 = googletag.defineSlot('/112081842/Front-End-TA2_240x400', [240, 400], 'ad2');
+    // console.log(slot1);
+    // console.log(slot2);
 
 commer1.setAttribute( "style", "position: absolute; top: calc(50vh - 250px + 20vh); left: 0;");
 commer2.setAttribute( "style", "position: absolute; top: calc(50vh - 250px + 20vh); right: 0;");
@@ -49,7 +49,7 @@ function throttle(func, ms) {
 
   /*     При изменении размера window реклама исчезает/появляется соответственно      */
 
-console.log(googletag.openConsole());
+// console.log(googletag.openConsole());
 
   window.addEventListener( "resize", throttle( function() {
  
